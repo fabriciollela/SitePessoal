@@ -231,3 +231,84 @@ a:hover {
 .experiencia{
     color: #868e96
 }
+
+/* Barra de progresso */
+
+.main{
+    margin: 50px auto;
+    width: 100%;
+}
+.progressBar{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: #eeeeee;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #222;
+}
+.title{
+    position: absolute;
+    width: 24%;
+    height: 20px;
+    padding-left: 10px;
+    float: left;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.0;
+    z-index: 10000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 2px 0 2px #333;
+    text-shadow: 1px 1px 1px #000;
+}
+.progress_value{
+    position: relative;
+    float: right;
+    padding-right: 10px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #455a64;
+    z-index: 10000;
+}
+.progress{
+    height: 20px;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 2px 0 2px #555;
+}
+.htmlColor{
+    background: #ED5B4E;
+}
+.cssColor{
+    background: #ED5B4E;
+}
+.jsColor{
+    background: #ED5B4E;
+}
+.phpColor{
+    background: #ED5B4E;
+}
+.ajaxColor{
+    background: #ED5B4E;
+}
+.html{
+    background: #F07770;
+}
+.css{
+    background: #F07770;
+}
+.js{
+    background: #F07770;
+}
+.php{
+    background: #F07770;
+}
+.ajax{
+    background: #F07770;
+}
+@media (max-width: 720px) {
+    .main{
+        width: 90%;
+    }
+}
