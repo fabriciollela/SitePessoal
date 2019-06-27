@@ -277,36 +277,6 @@ a:hover {
     border-radius: 5px;
     box-shadow: 2px 0 2px #555;
 }
-.htmlColor{
-    background: #ED5B4E;
-}
-.cssColor{
-    background: #ED5B4E;
-}
-.jsColor{
-    background: #ED5B4E;
-}
-.phpColor{
-    background: #ED5B4E;
-}
-.ajaxColor{
-    background: #ED5B4E;
-}
-.html{
-    background: #F07770;
-}
-.css{
-    background: #F07770;
-}
-.js{
-    background: #F07770;
-}
-.php{
-    background: #F07770;
-}
-.ajax{
-    background: #F07770;
-}
 @media (max-width: 720px) {
     .main{
         width: 90%;

@@ -23,8 +23,9 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/progress.bar.color.css" rel="stylesheet">
 
-    <!-- Favicon-->
+  <!-- Favicon-->
   <link rel="shortcut icon" href="img/favicon.png" />
 
 
@@ -55,7 +56,7 @@
           <a class="nav-link js-scroll-trigger" href="#education">Formação</a>
         </li>
         <li class="nav-item">
-          <a id="progressBar" class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
+          <a id="progressBarId" class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interesses</a>
@@ -64,8 +65,8 @@
           <a class="nav-link js-scroll-trigger" href="#awards">Certificações</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#publicacoes">Publicações</a>
-          </li>
+          <a class="nav-link js-scroll-trigger" href="#publicacoes">Publicações</a>
+        </li>
 
       </ul>
     </div>
@@ -243,49 +244,90 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h2 class="mb-5">Habilidades</h2>
-        <div class="subheading mb-3">Análise de Requisitos</div>
+        <div id="analiseRequisitos" class="subheading mb-3">Análise de Requisitos</div>
 
         <div class="main">
-            <div class="progressBar">
-              <div class="title htmlColor">Levantamento</div>
-              <div class="progress html"></div>
-              <div class="progress_value">95%</div>
-            </div>
-            <div class="progressBar">
-              <div class="title cssColor">Casos de Uso</div>
-              <div class="progress css"></div>
-              <div class="progress_value">85%</div>
-            </div>
-            <div class="progressBar">
-              <div class="title jsColor">Especificação por Exemplos</div>
-              <div class="progress js"></div>
-              <div class="progress_value">90%</div>
-            </div>
-            <div class="progressBar">
-              <div class="title phpColor">História de Usuário</div>
-              <div class="progress php"></div>
-              <div class="progress_value">70%</div>
-            </div>
-            <div class="progressBar">
-              <div class="title ajaxColor">Modelagem de Processos</div>
-              <div class="progress ajax"></div>
-              <div class="progress_value">30%</div>
-            </div>
-            <div class="progressBar">
-                <div class="title ajaxColor">Modelagem de Banco</div>
-                <div class="progress ajax"></div>
-                <div class="progress_value">15%</div>
-              </div>
+          <div class="progressBar">
+            <div class="title levantamento">Levantamento</div>
+            <div class="progress levantamento"></div>
+            <div class="progress_value">95%</div>
           </div>
+          <div class="progressBar">
+            <div class="title epe">Especificação por Exemplos</div>
+            <div class="progress epe"></div>
+            <div class="progress_value">90%</div>
+          </div>
+          <div class="progressBar">
+            <div class="title uc">Casos de Uso</div>
+            <div class="progress uc"></div>
+            <div class="progress_value">85%</div>
+          </div>
+          <div class="progressBar">
+            <div class="title historiaUsuario">História de Usuário</div>
+            <div class="progress historiaUsuario"></div>
+            <div class="progress_value">70%</div>
+          </div>
+          <div class="progressBar">
+            <div class="title processos">Modelagem de Processos</div>
+            <div class="progress processos"></div>
+            <div class="progress_value">30%</div>
+          </div>
+          <div class="progressBar">
+            <div class="title modelagemBanco">Modelagem de Banco</div>
+            <div class="progress modelagemBanco"></div>
+            <div class="progress_value">15%</div>
+          </div>
+        </div>
 
-        <div class="subheading mb-3">Teste de Software</div>
+        <div id="testeSoftware" class="subheading mb-3">Teste de Software</div>
 
-        <p>barra de progresso aqui</p>
+        <div class="main">
+          <div class="progressBar">
+            <div class="title docTeste">Documentação </div>
+            <div class="progress docTeste"></div>
+            <div class="progress_value">95%</div>
+          </div>
+          <div class="progressBar">
+            <div class="title execTeste">Execução</div>
+            <div class="progress execTeste"></div>
+            <div class="progress_value">95%</div>
+          </div>
+          <div class="progressBar">
+            <div class="title autoTeste">Automação</div>
+            <div class="progress autoTeste"></div>
+            <div class="progress_value">15%</div>
+          </div>
+        </div>
 
+        <div id="programacao" class="subheading mb-3">Programação</div>
 
-        <div class="subheading mb-3">Programação</div>
-        <p>barra de progresso aqui</p>
-
+        <div class="main">
+          <div class="progressBar">
+            <div class="title frontEnd">HTML, CSS e JavaScript</div>
+            <div class="progress frontEnd"></div>
+            <div class="progress_value">40%</div>
+          </div>
+          <div class="progressBar">
+            <div class="title java">Java</div>
+            <div class="progress java"></div>
+            <div class="progress_value">20%</div>
+          </div>
+          <div class="progressBar">
+            <div class="title kotlin">Kotlin</div>
+            <div class="progress kotlin"></div>
+            <div class="progress_value">15%</div>
+          </div>
+          <div class="progressBar">
+            <div class="title banco">Banco de Dados</div>
+            <div class="progress banco"></div>
+            <div class="progress_value">20%</div>
+          </div>
+        <div class="progressBar">
+          <div class="title git">Git</div>
+          <div class="progress git"></div>
+          <div class="progress_value">80%</div>
+        </div>
+      </div>
     </section>
 
     <hr class="m-0">
@@ -316,7 +358,7 @@
           </li>
           <li>
             <i class="fa-li fa fa-trophy text-warning"></i>
-            <p class="mb-0 font-weight-bold" >Certified Tester Foundation Level (CTFL)</p>
+            <p class="mb-0 font-weight-bold">Certified Tester Foundation Level (CTFL)</p>
             <p class="font-weight-light">BSTQB - Brazilian Software Testing Qualifications Board </p>
             <p class="font-weight-light">Credencial: 19-CTFL-08759-BR</p>
 
@@ -340,21 +382,21 @@
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publicacoes">
-        <div class="w-100">
-          <h2 class="mb-5">Publicações</h2>
+      <div class="w-100">
+        <h2 class="mb-5">Publicações</h2>
 
-  </div>
+      </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="js/progress.bar.js" ></script>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/progress.bar.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
+      <!-- Custom scripts for this template -->
+      <script src="js/resume.min.js"></script>
 
 </body>
 
