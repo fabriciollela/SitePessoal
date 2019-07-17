@@ -24,3 +24,8 @@ legend {
     padding: 5px 5px 5px 10px;
     background-color: #ffffff;
 }
+
+.span-dados-pessoa {
+    font-size: 20px;
+    vertical-align: super;
+}

@@ -37,8 +37,8 @@
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> -->
-            <a href="#addEmployeeModal" class="btn btn-primary" style="background-color: #0077b5;" data-toggle="modal"><i
-                class="fab fa-linkedin-in"></i> <span>Atualizar</span></a>
+            <a href="#addEmployeeModal" class="btn btn-primary" style="background-color: #0077b5;"
+                data-toggle="modal"><i class="fab fa-linkedin-in"></i> <span>Atualizar</span></a>
         </div>
     </nav>
 
@@ -51,25 +51,40 @@
                 <div class="form-group row">
                     <label for="example-text-input" class="col-2 col-form-label">Nome</label>
                     <div class="col-10">
-                        <input class="form-control" type="text" id="example-text-input">
+                        <input id="nome" class="form-control" type="text" id="example-text-input" disabled="disabled">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="example-text-input" class="col-2 col-form-label">Sobrenome</label>
                     <div class="col-10">
-                        <input class="form-control" type="text" id="example-text-input">
+                        <input id="sobrenome" class="form-control" type="text" id="example-text-input"
+                            disabled="disabled">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="example-text-input" class="col-2 col-form-label">Profissão</label>
                     <div class="col-10">
-                        <input class="form-control" type="text" id="example-text-input">
+                        <input id="profissao" class="form-control" type="text" id="example-text-input"
+                            disabled="disabled">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="exampleTextarea">Resumo sobre mim</label>
-                    <textarea class="form-control" id="resumo" rows="10"></textarea>
+                    <textarea class="form-control" id="resumo" rows="10" disabled="disabled"></textarea>
                 </div>
+            </div>
+
+            <div class="float-right">
+                <a id="btn-edit" class="btn btn-warning"><i class="material-icons">&#xe3c9;</i>
+                    <span class="span-dados-pessoa">Editar</span></a>
+
+                <a id="btn-cancel" class="btn btn-danger" style="color:white; display: none;"><i
+                        class="material-icons">&#xe5c9;</i> <span class="span-dados-pessoa">Cancelar</span></a>
+
+                <a id="btn-save" class="btn btn-success" style="color:white; display: none;"><i
+                        class="material-icons">&#xe5ca;</i>
+                    <span class="span-dados-pessoa"> Salvar</span>
+                </a>
             </div>
 
         </fieldset>
@@ -178,32 +193,45 @@
                                                     <i class="far fa-square fa-5x" data-toggle="dropdown"
                                                         href="#"></i></i>
                                                     <ul class="dropdown-menu">
-                                                        <li><a href="#"><i class="fa fa-facebook  fa-4x"></i>
-                                                                Facebook</a></li>
-                                                        <li><a href="#"><i class="fa fa-github  fa-4x"></i>
-                                                                Github</a></li>
-                                                        <li><a href="#"><i class="fa fa-instagram  fa-4x"></i>
-                                                                Istagram</a></li>
-                                                        <li><a href="#"><i class="fa fa-linkedin  fa-4x"></i>
-                                                                Linkedin</a></li>
+                                                        <li><a href="#"><i class="fa fa-envelope  fa-3x"></i>
+                                                            </a></li>
+                                                        <li><a href="#"><i class="fa fa-linkedin  fa-3x"></i>
+                                                            </a></li>
+                                                        <li><a href="#"><i class="fa fa-github  fa-3x"></i>
+                                                            </a></li>
+                                                        <li><a href="#"><i class="fa fa-twitter  fa-3x"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="#"><i class="fa fa-facebook  fa-3x"></i>
+                                                            </a></li>
+                                                        <li><a href="#"><i class="fa fa-instagram  fa-3x"></i>
+                                                            </a></li>
+                                                        <li><a href="#"><i class="fa fa-telegram  fa-3x"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="#"><i class="fa fa-whatsapp  fa-3x"></i>
+                                                            </a>
+                                                        </li>
+
                                                     </ul>
                                                 </label>
                                             </div>
-                                            <div class="form-group">
-                                                <label>Cor</label>
-                                                <input type="color" id="head" name="head" value="">
+            
+                                                <div class="form-group">
+                                                    <label>Cor</label>
+                                                    <input type="color" id="head" name="head" value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>URL</label>
+                                                    <input type="url" class="form-control"
+                                                        placeholder="http://www.exemplo.com.br" required>
+                                                </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label>URL</label>
-                                                <input type="url" class="form-control"
-                                                    placeholder="http://www.exemplo.com.br" required>
+                                            <div class="modal-footer">
+                                                <input type="button" class="btn btn-default" data-dismiss="modal"
+                                                    value="Cancelar">
+                                                <input type="submit" class="btn btn-success" value="Salvar">
                                             </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <input type="button" class="btn btn-default" data-dismiss="modal"
-                                                value="Cancelar">
-                                            <input type="submit" class="btn btn-success" value="Salvar">
-                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -1100,6 +1128,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/grid.js"></script>
+    <script src="js/dados.pessoais.js"></script>
 
 </body>
 
